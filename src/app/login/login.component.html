@@ -1,0 +1,27 @@
+<div>
+    <div>{{title}}</div>
+    <div>
+        <form method="post" #form="ngForm" (ngSubmit)="register(form)">
+            <ul>
+                <li>
+                    <span>Email :</span>
+                    <input type="text" class="" id="email" name="email" placeholder="Email" [(ngModel)]="creds.email">
+                </li>
+
+                <li>
+                    <span>Username :</span>
+                    <input type="text" class="" id="username" name="username" placeholder="username" [(ngModel)]="creds.username">
+                </li>
+
+                <li>
+                    <span>Password :</span>
+                    <input type="text" class="" id="password" name="password" placeholder="Password" [(ngModel)]="creds.password">
+                </li>
+
+                <li>
+                    <input type="submit" value="send">
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
